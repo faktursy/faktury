@@ -40,7 +40,7 @@ public class UserList {
 	private boolean userExists(String name) {
 		boolean exists = false;
 		for (User u:users)
-			if (u.getName() == name)
+			if (u.getName().equals(name))
 				exists=true;
 		return exists;
 	}

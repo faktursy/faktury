@@ -39,7 +39,6 @@ class AddUserListener extends Listener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// to do adduserwindow
-		widok.setUsers(model.getUsers());
 		
 		String newUsername = JOptionPane.showInputDialog(null,
 				"Podaj nazwê nowego u¿ytkownika",
