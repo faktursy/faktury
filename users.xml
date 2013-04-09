@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<userList>
-    <users id="1">
-        <name>afw</name>
-    </users>
-    <users id="2">
-        <name>ss</name>
-    </users>
-</userList>
+<userList/>

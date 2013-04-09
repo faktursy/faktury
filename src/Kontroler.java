@@ -56,6 +56,7 @@ class AddUserListener extends Listener implements ActionListener {
 				System.out.println(newUsername);
 				model.addUser(newUsername);
 				widok.setUsers(model.getUsers());
+				model.saveUsersToXmlFile();
 			}
 	}
 	
@@ -77,6 +78,7 @@ class RemoveUserListener extends Listener implements ActionListener {
 			if (dialogResult == JOptionPane.YES_OPTION) {
 				model.removeUser(user);
 				widok.setUsers(model.getUsers());
+				model.saveUsersToXmlFile();
 			}
 	}
 	}
@@ -90,7 +92,6 @@ class QuitListener extends Listener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		model.saveUsersToXmlFile();
 		System.exit(0);
 	}
 }
