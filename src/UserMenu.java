@@ -13,7 +13,6 @@ public class UserMenu extends JFrame{
 	private JPanel contentPanel;
 	private JComboBox<String> usersComboBox;
 	private JButton addUserButton, removeUserButton, exitButton, submitUserButton;
-	private JLabel testLabel;
 	
 	public UserMenu() {
 		this.setSize(500,400);
@@ -29,14 +28,12 @@ public class UserMenu extends JFrame{
 		removeUserButton = new JButton("Usuñ");
 		submitUserButton = new JButton("Wybierz");
 		exitButton = new JButton("Wyjœcie");
-		testLabel = new JLabel("test");
 		
 		contentPanel.add(usersComboBox);
 		contentPanel.add(addUserButton);
 		contentPanel.add(removeUserButton);
 		contentPanel.add(submitUserButton);
 		contentPanel.add(exitButton);
-		contentPanel.add(testLabel);
 		
 		//this.add(contentPanel);
 		//contentPanel.setVisible(true);
@@ -64,9 +61,6 @@ public class UserMenu extends JFrame{
 	}
 	public void addRemoveUserListener(ActionListener removeUserListener) {
 		removeUserButton.addActionListener(removeUserListener);
-	}
-	public void setUser(String name) {
-		testLabel.setText(name);
 	}
 	public void addSelectUserListener(ActionListener selectUserListener) {
 		// TODO Auto-generated method stub

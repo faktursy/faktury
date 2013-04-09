@@ -104,8 +104,8 @@ class SelectUserListener extends Listener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		model.setCurrentUser(widok.getSelectedUser());
-		widok.setUser(model.getCurrentUser().getName());
 		widok.setMainWindow();
+		widok.setUser(model.getCurrentUser().getName());
 	}
 	
 	

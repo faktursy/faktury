@@ -15,7 +15,8 @@ public class Widok {
 	}
 	
 	public void setUser(String name) {
-		userMenu.setUser(name);
+		if (okno!=null)
+			okno.setUser(name);
 	}
 	public boolean setUsers(ArrayList<String> Users) {
 		userMenu.setUsers(Users);

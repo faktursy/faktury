@@ -1,6 +1,7 @@
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
@@ -8,6 +9,7 @@ import javax.swing.JPanel;
 public class Okno extends JFrame{
 	private JPanel content;
 	private JButton exitButton;
+	private JLabel userLabel;
 
 	
 	public Okno() {
@@ -18,11 +20,15 @@ public class Okno extends JFrame{
 		content = new JPanel();
 		
 		exitButton = new JButton("Wyjœcie");
+		userLabel = new JLabel();
 		
 		content.add(exitButton);
+		content.add(userLabel);
 		this.add(content);
-		
-
+	}
+	
+	public void setUser(String name) {
+		userLabel.setText(name);
 	}
 }
 
